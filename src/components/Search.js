@@ -123,7 +123,7 @@ const Search = () => {
 
 
 
-                <form className='w-2/5 ' onSubmit={findCaliforniaCafes}>
+                <form className='sm:w-4/5 md:w-3/5 w-11/12' onSubmit={findCaliforniaCafes}>
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -133,7 +133,7 @@ const Search = () => {
                         <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-purple-400 hover:bg-purple-500 focus:border-0 focus:ring-0 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 ">Search</button>
                     </div>
                 </form>
-                <div className=' border-purple-600 mt-6 w-2/5 rounded-lg overflow-y-auto h-1/2'>
+                <div className=' border-purple-600 mt-6 sm:w-4/5 md:w-3/5 w-11/12 rounded-lg overflow-y-auto h-1/2'>
                     {result==''?<h1>Please enter a value to search...</h1>:<>
                   
                     {result?.map((elem=>{
